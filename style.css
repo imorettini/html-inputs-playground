@@ -1,0 +1,44 @@
+.header-container {
+  width: 100%;
+  position: sticky;
+  margin: 0 auto;
+}
+
+header {
+  padding: 40px 20px;
+  border-bottom: solid 1px #000000;
+}
+header h1 {
+  display: inline-block;
+  width: 200px;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: solid 3px #000000;
+}
+header h1:hover {
+  background: #f069d9;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
