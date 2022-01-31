@@ -2,6 +2,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -9,14 +10,18 @@ header {
 
     h1 {
         display: inline-block;
-        width: 20%;
+        width: 350px;
         font-size: 50px;
         font-weight: bold;
         border-bottom: solid 3px #000000;
+        background: linear-gradient(0deg, #ff92c7, #fde2e4) no-repeat right bottom / 0 var(--bg-h);
+        transition: background-size 350ms;
+        --bg-h: 100%;
     }
 
-    h1:hover {
-        background: #dfa9d6;
+    h1:where(:hover, :focus-visible) {
+        background-size: 100% var(--bg-h);
+        background-position-x: left;
     }
 }
 
@@ -49,7 +54,7 @@ nav {
     }
 
     a:hover {
-        color: #ecd19b;
+        color: #ff92c7;
         text-decoration: underline;
     }
 }
@@ -72,9 +77,14 @@ nav {
     textarea {
         width: 20%;
         padding: 8px;
+        border-radius: 5px;
 
         &:hover {
             border-color: #dfa9d6;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 80%;
         }
     }
 }

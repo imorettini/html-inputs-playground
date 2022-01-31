@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
@@ -8,13 +9,17 @@ header {
 }
 header h1 {
   display: inline-block;
-  width: 20%;
+  width: 350px;
   font-size: 50px;
   font-weight: bold;
   border-bottom: solid 3px #000000;
+  background: linear-gradient(0deg, #ff92c7, #fde2e4) no-repeat right bottom/0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
 }
-header h1:hover {
-  background: #dfa9d6;
+header h1:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
 }
 
 .header-container {
@@ -45,7 +50,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: #ecd19b;
+  color: #ff92c7;
   text-decoration: underline;
 }
 
@@ -66,10 +71,17 @@ nav a:hover {
 .input-types textarea {
   width: 20%;
   padding: 8px;
+  border-radius: 5px;
 }
 .input-types input:hover,
 .input-types textarea:hover {
   border-color: #dfa9d6;
+}
+@media screen and (max-width: 480px) {
+  .input-types input,
+.input-types textarea {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
