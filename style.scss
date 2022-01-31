@@ -3,6 +3,7 @@
 body {
     font-family: "Roboto", sans-serif;
     overflow-x: hidden;
+    background: #fefefe;
 }
 
 header {
@@ -55,7 +56,6 @@ nav {
 
     a:hover {
         color: #ff92c7;
-        text-decoration: underline;
     }
 }
 .input-types {
@@ -78,9 +78,16 @@ nav {
         width: 20%;
         padding: 8px;
         border-radius: 5px;
+        border: solid 2px #000000;
 
         &:hover {
-            border-color: #dfa9d6;
+            outline: none !important;
+            border: 2px solid #dfa9d6;
+        }
+
+        &:focus {
+            outline: none !important;
+            border: 2px solid #dfa9d6;
         }
 
         @media screen and (max-width: 480px) {
@@ -91,8 +98,6 @@ nav {
 
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
     color: black;
     font-size: 14px;
 }

@@ -2,6 +2,7 @@
 body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  background: #fefefe;
 }
 
 header {
@@ -51,7 +52,6 @@ nav a {
 }
 nav a:hover {
   color: #ff92c7;
-  text-decoration: underline;
 }
 
 .input-types {
@@ -72,10 +72,17 @@ nav a:hover {
   width: 20%;
   padding: 8px;
   border-radius: 5px;
+  border: solid 2px #000000;
 }
 .input-types input:hover,
 .input-types textarea:hover {
-  border-color: #dfa9d6;
+  outline: none !important;
+  border: 2px solid #dfa9d6;
+}
+.input-types input:focus,
+.input-types textarea:focus {
+  outline: none !important;
+  border: 2px solid #dfa9d6;
 }
 @media screen and (max-width: 480px) {
   .input-types input,
@@ -86,8 +93,6 @@ nav a:hover {
 
 footer {
   width: 100%;
-  position: absolute;
-  bottom: 0;
   color: black;
   font-size: 14px;
 }
