@@ -84,4 +84,18 @@ nav a:hover {
   }
 }
 
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: black;
+  font-size: 14px;
+}
+
+.copyright {
+  padding: 20px;
+  color: #000000;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */
