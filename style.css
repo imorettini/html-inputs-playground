@@ -54,44 +54,86 @@ nav a:hover {
   color: #ff92c7;
 }
 
-.input-types {
+.main-container {
   width: 100%;
+  display: flex;
   margin: 0 auto;
   padding: 0 50px;
+  border: solid blue 1px;
 }
-.input-types li {
+@media screen and (max-width: 480px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+  }
+}
+
+.input-general,
+.input-mobile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 50%;
+  padding: 30px;
+  border: solid green 1px;
+}
+.input-general li,
+.input-mobile li {
   display: flex;
   flex-direction: column;
   margin: 0 0 20px 0;
+  box-sizing: border-box;
+  border: solid red 1px;
 }
-.input-types label {
+.input-general h2,
+.input-mobile h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.input-general h3,
+.input-mobile h3 {
+  font-size: 12px;
+  margin: 8px 0 12px 0;
+}
+.input-general label,
+.input-mobile label {
   padding: 0 0px 4px 2px;
 }
-.input-types input,
-.input-types textarea {
-  width: 20%;
+.input-general input,
+.input-general textarea,
+.input-mobile input,
+.input-mobile textarea {
+  width: 50%;
   padding: 8px;
   border-radius: 5px;
   border: solid 2px #000000;
 }
-.input-types input:hover,
-.input-types textarea:hover {
+.input-general input:hover,
+.input-general textarea:hover,
+.input-mobile input:hover,
+.input-mobile textarea:hover {
   outline: none !important;
   border: 2px solid #dfa9d6;
 }
-.input-types input:focus,
-.input-types textarea:focus {
+.input-general input:focus,
+.input-general textarea:focus,
+.input-mobile input:focus,
+.input-mobile textarea:focus {
   outline: none !important;
   border: 2px solid #dfa9d6;
 }
 @media screen and (max-width: 480px) {
-  .input-types input,
-.input-types textarea {
+  .input-general input,
+.input-general textarea,
+.input-mobile input,
+.input-mobile textarea {
     width: 80%;
   }
 }
 
 footer {
+  text-align: center;
   width: 100%;
   color: black;
   font-size: 14px;
