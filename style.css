@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  padding: 40px 30px;
+  padding: 40px 50px;
 }
 header h1 {
   display: inline-block;
@@ -25,24 +25,24 @@ header h1:where(:hover, :focus-visible) {
 
 .header-container {
   width: 100%;
-  position: sticky;
+  position: relative;
   margin: 0 auto;
 }
 
 nav {
   position: absolute;
-  top: 0;
-  right: 30px;
+  bottom: -4px;
+  left: 361px;
 }
 @media screen and (max-width: 480px) {
   nav {
-    position: relative;
-    margin: 20px;
+    position: unset;
+    margin: 10px 0;
   }
 }
 nav li {
   display: inline;
-  margin: 0 0 0 15px;
+  margin: 0 15px 0 0;
 }
 nav a {
   color: #000000;
@@ -57,7 +57,7 @@ nav a:hover {
 .input-types {
   width: 100%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 0 50px;
 }
 .input-types li {
   display: flex;
