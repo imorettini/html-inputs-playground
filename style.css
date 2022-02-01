@@ -63,7 +63,6 @@ nav a:hover {
   display: flex;
   margin: 0 auto;
   padding: 0 50px;
-  border: solid blue 1px;
 }
 @media screen and (max-width: 480px) {
   .main-container {
@@ -75,20 +74,14 @@ nav a:hover {
 
 .input-general,
 .input-mobile {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   flex: 50%;
   padding: 30px;
-  border: solid green 1px;
 }
 .input-general li,
 .input-mobile li {
-  display: flex;
-  flex-direction: column;
   margin: 0 0 20px 0;
   box-sizing: border-box;
-  border: solid red 1px;
 }
 .input-general h2,
 .input-mobile h2 {
@@ -102,6 +95,7 @@ nav a:hover {
 }
 .input-general label,
 .input-mobile label {
+  display: block;
   padding: 0 0px 4px 2px;
 }
 .input-general input,
@@ -112,6 +106,7 @@ nav a:hover {
   padding: 8px;
   border-radius: 5px;
   border: solid 2px #000000;
+  resize: vertical;
 }
 .input-general input:hover,
 .input-general textarea:hover,
