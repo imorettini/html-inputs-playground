@@ -27,6 +27,9 @@ header {
         background-size: 100% var(--bg-h);
         background-position-x: left;
     }
+    @media screen and (max-width: 480px) {
+        padding: 18px 0 40px 36px;
+    }
 }
 
 .header-container {
@@ -66,23 +69,25 @@ nav {
     width: 80%;
     display: flex;
     margin: 0 auto;
-    padding: 0 10px;
 
     @media screen and (max-width: 480px) {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        padding: unset;
+        padding: 0 18px;
     }
     @media all and (min-width: 480px) and (max-width: 768px) {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        padding: unset;
+        padding: 0 18px;
     }
 
     @media all and (min-width: 768px) and (max-width: 1024px) {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        padding: unset;
+        padding: 0 18px;
     }
 }
 
@@ -95,22 +100,18 @@ nav {
     @media screen and (max-width: 320px) {
         text-align: center;
         padding: 20px 0;
-       
     }
     @media screen and (max-width: 480px) {
         text-align: center;
         padding: 20px 0;
-       
     }
     @media all and (min-width: 480px) and (max-width: 768px) {
         text-align: center;
         padding: 20px 0;
-      
     }
     @media all and (min-width: 768px) and (max-width: 1024px) {
         text-align: center;
         padding: 20px 0;
-    
     }
 
     ul {

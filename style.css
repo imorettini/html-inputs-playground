@@ -25,6 +25,11 @@ header h1:where(:hover, :focus-visible) {
   background-size: 100% var(--bg-h);
   background-position-x: left;
 }
+@media screen and (max-width: 480px) {
+  header {
+    padding: 18px 0 40px 36px;
+  }
+}
 
 .header-container {
   width: 100%;
@@ -61,27 +66,29 @@ nav a:hover {
   width: 80%;
   display: flex;
   margin: 0 auto;
-  padding: 0 10px;
 }
 @media screen and (max-width: 480px) {
   .main-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: unset;
+    padding: 0 18px;
   }
 }
 @media all and (min-width: 480px) and (max-width: 768px) {
   .main-container {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    padding: unset;
+    padding: 0 18px;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1024px) {
   .main-container {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    padding: unset;
+    padding: 0 18px;
   }
 }
 
