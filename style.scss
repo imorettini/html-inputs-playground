@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     font-family: "Roboto", sans-serif;
-    overflow-x: hidden;
     background: #fefefe;
 }
 
@@ -64,11 +63,10 @@ nav {
 }
 
 .main-container {
-    width: 100%;
+    width: 80%;
     display: flex;
     margin: 0 auto;
-    padding: 0 50px;
-
+    padding: 0 10px;
 
     @media screen and (max-width: 480px) {
         display: flex;
@@ -76,34 +74,37 @@ nav {
         padding: unset;
     }
 }
+
 .input-general,
 .input-mobile {
     width: 100%;
     flex: 50%;
-    padding: 30px;
+    padding: 50px;
 
+    @media screen and (max-width: 480px) {
+        padding: 10px;
+    }
 
-    ul{
-      
+    ul {
     }
 
     li {
-        margin: 0 0 20px 0;
-        box-sizing: border-box;
-      
+        margin: 0 0 18px 0;
     }
 
     h2 {
-        font-size: 16px;
+        font-size: 24px;
         font-weight: bold;
+        margin-bottom: 8px;
     }
 
     h3 {
         font-size: 12px;
-        margin: 8px 0 12px 0;
+        margin-bottom: 20px;
     }
 
-    label {
+    label:not(#checkbox, #radio) {
+        text-align: left;
         display: block;
         padding: 0 0px 4px 2px;
     }
@@ -114,7 +115,6 @@ nav {
         padding: 8px;
         border-radius: 5px;
         border: solid 2px #000000;
-        resize: vertical;
 
         &:hover {
             outline: none !important;
@@ -129,6 +129,19 @@ nav {
         @media screen and (max-width: 480px) {
             width: 80%;
         }
+    }
+
+    #color {
+        padding: unset;
+    }
+
+    #checkbox, #radio {
+        vertical-align: middle;
+        width: unset;
+    }
+
+    textarea {
+        resize: vertical;
     }
 }
 

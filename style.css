@@ -5,7 +5,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
   background: #fefefe;
 }
 
@@ -59,10 +58,10 @@ nav a:hover {
 }
 
 .main-container {
-  width: 100%;
+  width: 80%;
   display: flex;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 10px;
 }
 @media screen and (max-width: 480px) {
   .main-container {
@@ -76,25 +75,32 @@ nav a:hover {
 .input-mobile {
   width: 100%;
   flex: 50%;
-  padding: 30px;
+  padding: 50px;
+}
+@media screen and (max-width: 480px) {
+  .input-general,
+.input-mobile {
+    padding: 10px;
+  }
 }
 .input-general li,
 .input-mobile li {
-  margin: 0 0 20px 0;
-  box-sizing: border-box;
+  margin: 0 0 18px 0;
 }
 .input-general h2,
 .input-mobile h2 {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
+  margin-bottom: 8px;
 }
 .input-general h3,
 .input-mobile h3 {
   font-size: 12px;
-  margin: 8px 0 12px 0;
+  margin-bottom: 20px;
 }
-.input-general label,
-.input-mobile label {
+.input-general label:not(#checkbox, #radio),
+.input-mobile label:not(#checkbox, #radio) {
+  text-align: left;
   display: block;
   padding: 0 0px 4px 2px;
 }
@@ -106,7 +112,6 @@ nav a:hover {
   padding: 8px;
   border-radius: 5px;
   border: solid 2px #000000;
-  resize: vertical;
 }
 .input-general input:hover,
 .input-general textarea:hover,
@@ -129,6 +134,20 @@ nav a:hover {
 .input-mobile textarea {
     width: 80%;
   }
+}
+.input-general #color,
+.input-mobile #color {
+  padding: unset;
+}
+.input-general #checkbox, .input-general #radio,
+.input-mobile #checkbox,
+.input-mobile #radio {
+  vertical-align: middle;
+  width: unset;
+}
+.input-general textarea,
+.input-mobile textarea {
+  resize: vertical;
 }
 
 footer {

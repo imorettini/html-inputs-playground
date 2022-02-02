@@ -30,32 +30,26 @@
                         <label for="text">Text:</label>
                         <input type="text" id="text" class="input-example" placeholder="Type anything here!">
                     </li>
-
+                    <li>
+                        <label>Text disabled</label>
+                        <input type="text" placeholder="You can't type here :(" disabled>
+                    </li>
                     <li>
                         <label for="textarea">Textarea:</label>
                         <textarea id="textarea" placeholder="You can expand me! :)"></textarea>
                     </li>
-
                     <li>
                         <label for="date">Date:</label>
                         <input type="date" id="date">
                     </li>
-
                     <li>
                         <label for="datetime">Datetime:</label>
                         <input type="datetime-local" id="datetime">
                     </li>
-
                     <li>
                         <label for="month">Month:</label>
                         <input type="month" id="month">
                     </li>
-
-                    <li>
-                        <label for="file">File upload:</label>
-                        <input type="file" id="file">
-                    </li>
-
                     <li>
                         <label for="password">Password:</label>
                         <input type="password" id="password" placeholder="I will hide anything you write here">
@@ -63,7 +57,50 @@
 
                     <li>
                         <label for="number">Number:</label>
-                        <input type="number" placeholder="I only accept numbers">
+                        <input type="number" id="number" placeholder="I only accept numbers">
+                    </li>
+                </ul>
+            </section>
+            <section class="input-general">
+                <ul>
+                    <li>
+                        <label for="file">File upload:</label>
+                        <input type="file" id="file">
+                    </li>
+                    <li>
+                        <label for="color">Color:</label>
+                        <input type="color" id="color">
+                    </li>
+                    <li>
+                        <label for="checkbox" id="checkbox">Checkbox:</label>
+                        <input type="checkbox" id="checkbox" checked>
+                        <input type="checkbox" id="checkbox">
+                        <input type="checkbox" id="checkbox" checked disabled>
+                        <input type="checkbox" id="checkbox" disabled>
+                    </li>
+                    <li>
+                        <label for="radio" id="radio">Radio:</label>
+                        <input type="radio" id="radio" name="group-radio" checked>
+                        <input type="radio" id="radio" name="group-radio">
+                        <input type="radio" id="radio" checked disabled>
+                        <input type="radio" id="radio" disabled>
+                    </li>
+                    <li>
+                        <label for="range">Range:</label>
+                        <input type="range" id="range" list="tickmarks">
+                        <datalist id="tickmarks">
+                            <option value="0" label="0%">
+                            <option value="10">
+                            <option value="20">
+                            <option value="30">
+                            <option value="40">
+                            <option value="50" label="50%">
+                            <option value="60">
+                            <option value="70">
+                            <option value="80">
+                            <option value="90">
+                            <option value="100" label="100%">
+                          </datalist>
                     </li>
                 </ul>
             </section>
@@ -79,6 +116,10 @@
                     <li>
                         <label for="search">Search:</label>
                         <input type="search" id="search" placeholder="Search button appears on keyboard">
+                    </li>
+                    <li>
+                        <label for="tel">Telephone:</label>
+                        <input type="tel" id="tel">
                     </li>
                 </ul>
             </section>
