@@ -70,6 +70,20 @@ nav a:hover {
     padding: unset;
   }
 }
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+  }
+}
 
 .input-general,
 .input-mobile {
@@ -78,6 +92,18 @@ nav a:hover {
   padding: 50px;
 }
 @media screen and (max-width: 480px) {
+  .input-general,
+.input-mobile {
+    padding: 10px;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .input-general,
+.input-mobile {
+    padding: 10px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .input-general,
 .input-mobile {
     padding: 10px;
@@ -128,6 +154,22 @@ nav a:hover {
   border: 2px solid #dfa9d6;
 }
 @media screen and (max-width: 480px) {
+  .input-general input,
+.input-general textarea,
+.input-mobile input,
+.input-mobile textarea {
+    width: 80%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .input-general input,
+.input-general textarea,
+.input-mobile input,
+.input-mobile textarea {
+    width: 80%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .input-general input,
 .input-general textarea,
 .input-mobile input,
